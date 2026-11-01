@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Percabangan</title>
+</head>
+<body>
+    <h2>Latihan Percabangan - Soal 1 & 2</h2>
+    <p>Silakan buka <b>Inspect Element -> Console</b></p>
+
+    <script>
+        console.log("Soal 1: Penilaian");
+        var nilai = 80;
+        if (nilai >= 75) {
+            console.log("Lulus");
+        } else {
+            console.log("Remedial");
+        }
+
+        console.log(" ");
+        console.log("Soal 2: Kode Peran");
+        function cariRole(kodePeran) {
+            switch (kodePeran) {
+                case "A":
+                    console.log("Admin");
+                    break;
+                case "U":
+                    console.log("User");
+                    break;
+                default:
+                    console.log("Guest");
+                    break;
+            }
+        }
+
+        cariRole("A");
+        cariRole("U");
+    </script>
+</body>
+</html>
